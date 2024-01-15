@@ -20,6 +20,7 @@ So far, RAG applications are the most helpful outcome of the AI revolution.
 ### Update .env file
 
 Update the .env file with your OPENAI_KEY
+
 `OPENAI_API_KEY=YOUR API KEY`
 
 
