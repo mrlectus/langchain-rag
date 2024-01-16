@@ -78,6 +78,8 @@ pyasn1==0.5.1
 pyasn1-modules==0.3.0
 pydantic==2.5.3
 pydantic_core==2.14.6
+PyMuPDF==1.23.14
+PyMuPDFb==1.23.9
 pypdf==3.17.4
 PyPika==0.48.9
 pyproject_hooks==1.0.0
