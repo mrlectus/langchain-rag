@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -45,8 +46,8 @@ Question: {input}"""
 )
 
 # Load a PDF file and split it into documents
-loader = PyPDFLoader("./llm-ebook-part1.pdf")
-docs = loader.load_and_split()
+loader = PyMuPDFLoader("./llm-ebook-part1.pdf")
+docs = loader.load()
 
 # Use a text splitter to separate characters in the documents
 text_splitter = RecursiveCharacterTextSplitter()
